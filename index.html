@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Welcome to the Advanced Development Factory!</title>
+    <link href="index.css" rel="stylesheet">
+    <script defer src="./node_modules/@fortawesome/fontawesome-free/js/all.js"></script>
+    <link href="./node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+
+<body>
+    <div class="p-2 sticky-top" style="background-color: white; text-align: center;">
+        <h1>Advanced Development Factory</h1>
+        <h5>A full development environment in a container <i class="fab fa-docker"></i></h5>
+        <nav>
+            <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                <button class="nav-link active" id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#nav-home" type="button" role="tab" aria-controls="nav-home" aria-selected="true">Home</button>
+                <button class="nav-link" id="nav-git-tab" data-bs-toggle="tab" data-bs-target="#nav-git" type="button" role="tab" aria-controls="nav-git" aria-selected="false">Git</button>
+                <button class="nav-link" id="nav-cli-tab" data-bs-toggle="tab" data-bs-target="#nav-cli" type="button" role="tab" aria-controls="nav-cli" aria-selected="false">Terminal</button>
+            </div>
+        </nav>
+    </div>
+
+    <div>
+        <div class="tab-content" id="nav-tabContent">
+            <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
+                <div class="p-2 m-2">
+                    <p><strong>Welcome to the ADF!</strong></p>
+                    <p>If you are seeing this, then you've already succesfully connected to this container. It runs Ubuntu 20.04, and comes with all kinds of tools that will make your life easier.
+                    </p>
+                    <ul>
+                        <li>Visual Studio Code</li>
+                        <li>An Android emulator and CLI utilities</li>
+                        <li>Flutter and Dart</li>
+                        <li>Chrome</li>
+                        <li>Firefox</li>
+                        <li>Git</li>
+                        <li>.NET</li>
+                        <li>A full Linux environment</li>
+                    </ul>
+                    <p>
+                        Go ahead and start the Android emulator and VS Code from the desktop. Clone your Flutter project, hit F5 to run, and admire your work in the emulator!
+                    </p>
+                </div>
+            </div>
+            <div class="tab-pane fade" id="nav-git" role="tabpanel" aria-labelledby="nav-git-tab">
+                <div class="p-2 m-2">
+                    <p><strong>How to Git</strong></p>
+                    <p>GIT is an open-source version control system. An interactive tutorial is available at <a href="https://learngitbranching.js.org/" target="_blank">https://learngitbranching.js.org/</a> .
+                    </p>
+                    <p>
+                        Your workflow will probably look something like this:
+                    </p>
+                    <ol>
+                        <li>Start the Android emulator and Visual Studio Code</li>
+                        <li>Open a new terminal, and clone your repository:
+                            <br /><code>git clone https://github.com/umgc/DevSecOpsPlayground.git</code>
+                        </li>
+                        <li>Create a new branch: <br /><code>git checkout -b jersoe/buttonfix</code></li>
+                        <li>Make changes, and test locally</li>
+                        <li>Stage your changes using: <br /><code>git add .</code></li>
+                        <li>Commit your changes using:
+                            <br /><code>git commit -m "Finally got that button to work"</code>
+                        </li>
+                        <li>Push your changes to GitHub:
+                            <br /><code>git push --set-upstream origin jersoe/buttonfix</code>
+                        </li>
+                        <li>Create a pull request on GitHub</li>
+                        <li>Wait until your PR is approved</li>
+                        <li>Merge your PR on GitHub into the appropiate branch (ie. developer or main)</li>
+                    </ol>
+                </div>
+            </div>
+            <div class="tab-pane fade" id="nav-cli" role="tabpanel" aria-labelledby="nav-cli-tab">
+                <div class="p-2 m-2">
+                    <p><strong>How to use the terminal</strong></p>
+                    <p>The terminal can be used to interact with the system using the command line interface. You can issue commands and see the output. To open a terminal, use the terminal button at the bottom of the screen or from within VS Code.
+                    </p>
+                    <p>
+                        Here are some commands that are used often:
+                    </p>
+                    <ul>
+                        <li>Navigate to a directory: <code>cd &lt;directory&gt;</code></li>
+                        <li>Move a file: <code>mv &lt;file&gt; &lt;destination&gt;</code></li>
+                        <li>Rename a file: <code>mv &lt;file&gt; &lt;destination&gt;</code></li>
+                        <li>Copy a file: <code>cp &lt;file&gt; &lt;destination&gt;</code></li>
+                        <li>Delete a file: <code>rm &lt;file&gt;</code></li>
+                        <li>Delete a directory: <code>rm -rf &lt;directory&gt;</code></li>
+                        <li>Execute a command as root: <code>sudo &lt;command&gt;</code></li>
+                        <li>Become root: <code>sudo su</code></li>
+                        <li>Untar a file: <code>tar -xvf &lt;tar_archive&gt;</code></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
